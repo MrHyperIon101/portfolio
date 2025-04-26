@@ -43,6 +43,7 @@ const social = [
   },
   {
     name: "Instagram",
+    icon: "instagram",
     link: "https://instagram.com/mrhyperion",
   },
 ];
@@ -151,20 +152,6 @@ const about = {
       {
         name: "Google Developer Group Kolkata",
         description: <>Studied online marketing and personal branding. Also worked on Gemini Workshops.</>,
-      },
-    ],
-  },
-  certifications: {
-    display: true, // set to false to hide this section
-    title: "Certifications",
-    certificates: [
-      {
-        name: "Deep Learning with PyTorch: Image Segmentation",
-        description: <>Credential ID: QTAMYMVY53CS, Verified on Coursera Project Network.</>,
-      },
-      {
-        name: "Machine Learning Pipelines with Azure ML Studio",
-        description: <>Credential ID: ITX19LGHDF28, Verified on Coursera Project Network.</>,
       },
     ],
   },
