@@ -157,12 +157,12 @@ const about = {
     institutions: [
       {
         name: "Google Data Analytics Professional Certificate",
-        description: <>Data analysis certification from Google</>,
+        description: <>Status: Currently Ongoing.</>,
       },
-      { name: "IBM Data Science Professional Certificate", description: <>Data Science certificate from IBM</>},
-      { name: "Microsoft Certified: Azure AI Fundamentals", description: <>AI certification from Microsoft Azure</> },
-      { name: "TensorFlow Developer Professional Certificate", description: <>TensorFlow developer certification</> },
-      { name: "AWS Certified Solutions Architect – Associate", description: <>AWS Certified Solutions Architect</> },
+      { name: "Machine Learning Pipelines with Azure ML Studio", description: <>In this project-based course, we built an end-to-end machine learning pipeline in Azure ML Studio, all without writing a single line of code!</>},
+      { name: "Get started with Asana", description: <>In this course, we learnt the Asana Fundamentals and managing tasks, subtasks, sections on Asana's Platform. It helped in learning about management of project workflow"</> },
+      { name: "Google Ads for Beginners", description: <>Learnt to create ad groups, do keyword research, set up audience targeting, and write ads</> },
+      { name: "Deep Learning with PyTorch : Image Segmentation", description: <>Used U-Net architecture for segmentation and created train function and evaluator for training loop</> },
     ]
 
   },
