@@ -41,6 +41,7 @@ const social = [
     icon: "email",
     link: "mailto:mrhyperionai@gmail.com",
   },
+  
 ];
 
 const home = {
