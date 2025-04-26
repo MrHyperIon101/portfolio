@@ -50,11 +50,8 @@ const home = {
   headline: <>Design engineer and builder</>,
   subline: (
     <>
-      I'm Souvik, a research intern at <InlineCode>MIT</InlineCode>, where I research on container based operating systems in quantum computing. I’m a Computer Science student specializing in Data Science at Sikkim Manipal Institute of Technology, passionate about turning data into insights and ideas into real-world solutions.
-      <br /> My interests span across the tech spectrum — from building full-stack applications to exploring the capabilities of Large Language Models (LLMs), cloud computing, and intelligent systems. I’m always eager to dive into new technologies, solve meaningful problems, and create experiences that make a difference.
-      Currently leveling up in AWS Cloud, crafting my personal portfolio, and actively looking to collaborate in hackathons and tech workshops.
-      Let’s connect and build something meaningful together.
-      I also am actively connected on GitHub by the username 'mrhyperion101' developing and sharing various scripts, customization ideas to the open source community and I'm excited to collaborate with more people. It would be a huge opportunity for me to connect with industry professionals, learn from their experiences and ideas, and contribute to this never ending ecosystem of technology.
+      I'm Souvik, a research intern at <InlineCode>MIT</InlineCode>, where I research on container based operating systems in quantum computing.
+      <br /> My interests span across the tech spectrum — from building full-stack applications to exploring the capabilities of Large Language Models (LLMs), cloud computing, and intelligent systems.
     </>
   ),
 };
@@ -71,7 +68,7 @@ const about = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
