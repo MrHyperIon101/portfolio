@@ -41,11 +41,6 @@ const social = [
     icon: "email",
     link: "mailto:mrhyperionai@gmail.com",
   },
-  {
-    name: "Instagram",
-    icon: "instagram",
-    link: "https://instagram.com/mrhyperion",
-  },
 ];
 
 const home = {
