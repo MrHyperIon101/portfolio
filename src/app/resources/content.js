@@ -151,6 +151,21 @@ const about = {
       },
     ],
   },
+  certifications: {
+    display: true, // set to false to hide this section
+    title: "Certifications",
+    institutions: [
+      {
+        name: "Google Data Analytics Professional Certificate",
+        description: <>Data analysis certification from Google</>,
+      },
+      { name: "IBM Data Science Professional Certificate", description: <>Data Science certificate from IBM</>},
+      { name: "Microsoft Certified: Azure AI Fundamentals", description: <>AI certification from Microsoft Azure</> },
+      { name: "TensorFlow Developer Professional Certificate", description: <>TensorFlow developer certification</> },
+      { name: "AWS Certified Solutions Architect – Associate", description: <>AWS Certified Solutions Architect</> },
+    ]
+
+  },
   technical: {
     display: true, // set to false to hide this section
     title: "Technical skills",

@@ -67,6 +67,11 @@ export default function About() {
       items: about.technical.skills.map((skill) => skill.title),
     },
   ];
+    structure.push({
+        title: about.certifications.title,
+        display: about.certifications.display,
+        items: about.certifications.institutions.map((institution) => institution.name),
+    });
   return (
     <Column maxWidth="m">
       <script
@@ -291,6 +296,23 @@ export default function About() {
             </>
           )}
 
+          {about.certifications.display && (
+            <>
+              <Heading as="h2" id={about.certifications.title} variant="display-strong-s" marginBottom="m">
+                {about.certifications.title}
+              </Heading>
+              <Column fillWidth gap="l" marginBottom="40">
+                {about.certifications.institutions.map((institution, index) => (
+                  <Column key={`${institution.name}-${index}`} fillWidth gap="4">
+                    <Text id={institution.name} variant="heading-strong-l">
+                      {institution.name}
+                    </Text>
+                    <Text variant="heading-default-xs" onBackground="neutral-weak">
+                      {institution.description}
+                    </Text>
+                  </Column>
+                ))}</Column></>
+          )}
           {about.technical.display && (
             <>
               <Heading
