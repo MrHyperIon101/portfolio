@@ -158,7 +158,7 @@ const about = {
   certifications: {
     display: true, // set to false to hide this section
     title: "Certifications",
-    certifications: [
+    certificates: [
       {
         name: "Deep Learning with PyTorch: Image Segmentation",
         description: <>Credential ID: QTAMYMVY53CS, Verified on Coursera Project Network.</>,
