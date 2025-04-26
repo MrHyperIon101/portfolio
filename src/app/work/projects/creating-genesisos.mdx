@@ -1,0 +1,121 @@
+---
+title: "Building GenesisOS: My Journey in Designing a Lightweight, Customizable Operating System"
+publishedAt: "2025-01-01"
+summary: "Explore the musical world like never before with Voxtrona."
+images:
+  - "/images/projects/project-01/genesisos.png"
+team:
+  - name: "Souvik Bagchi"
+    role: "Software Engineer"
+    avatar: "/images/avatar.jpeg"
+    linkedIn: "https://www.linkedin.com/bagchisouvik/"
+link: "https://github.com/BytePin/GenesisOS"
+---
+Creating an operating system has always been a dream project for many developers — and for me, that dream took shape as GenesisOS.
+GenesisOS isn’t just another Linux distribution or a modded system. It’s a minimalistic, fast, and elegant custom OS, designed from scratch with a clear vision: simplicity, speed, and freedom.
+
+This journey pushed me to the limits of my knowledge about computers, hardware interaction, system design, and low-level programming — and it became one of the most rewarding projects I’ve ever worked on.
+🖥️ What is GenesisOS?
+GenesisOS is a minimalistic, modular operating system built with the philosophy of simplicity, control, and customizability.
+It’s designed to be light on resources while still providing the essential tools needed for both everyday use and development.
+
+GenesisOS focuses on:
+
+Minimal System Footprint: Fast boot times, low memory usage.
+
+User Control: You decide what gets installed — no unnecessary software by default.
+
+Customization: Simple to theme, configure, and extend.
+
+Learning by Building: It's also a project for deepening understanding of how OS internals work.
+🎯 The Goal
+From the start, my goals were:
+
+Create a lightweight Linux-based OS that strips away unnecessary complexity.
+
+Learn and implement key system components myself — from the desktop environment to basic package management.
+
+Offer a foundation that anyone could personalize or build upon.
+
+🛠️ Technologies and Tools
+Linux Kernel: Base of the operating system.
+
+X11 / Lightweight Window Managers: For graphical display.
+
+Custom Scripts: Bash, Python — for automation and tooling.
+
+BusyBox: Core utilities for a minimal userspace.
+
+Makefiles: For managing builds and installations.
+
+QEMU & VirtualBox: For testing and virtual deployments.
+
+📈 Development Journey
+1. Creating the Core System
+I began by assembling a basic Linux environment — bootloader, kernel, and init system.
+Understanding the boot process, filesystem hierarchy, and kernel configuration was critical during this stage. I manually built parts of the system instead of relying entirely on prepackaged distributions to learn at every step.
+
+2. Building a Minimal Desktop Environment
+Instead of using bloated desktop environments, I integrated lightweight window managers like Openbox, Fluxbox, or i3 (with the idea of switching easily).
+This allowed GenesisOS to run smoothly even on older hardware.
+
+3. Custom Utilities and Tools
+To maintain simplicity, I wrote custom scripts and minimal GUIs:
+
+A basic package installer script.
+
+Simple panels and menus for launching applications.
+
+Custom theming support through editable configuration files.
+
+4. Testing and Optimization
+Most of the testing happened in virtual machines (QEMU, VirtualBox) and on low-spec hardware.
+Key optimization tasks included:
+
+Reducing boot time by disabling unnecessary services.
+
+Stripping binaries to reduce size.
+
+Tweaking the init system for faster startup.
+
+📱 Key Features
+Modular Setup: Install only what you need. Start minimal, build upwards.
+
+Low Resource Usage: GenesisOS can easily run on machines with as little as 512MB of RAM.
+
+Custom Desktop: Lightweight window manager with customizable themes.
+
+Open and Transparent: Everything is scriptable, editable, and understandable.
+
+Educational Value: Perfect for anyone wanting to learn Linux internals by actually using and modifying a real OS.
+
+🚀 What I Learned
+Operating system internals are incredibly deep — even building a "basic" OS requires learning about filesystems, permissions, kernel modules, and networking.
+
+Minimalism leads to speed, but requires very thoughtful defaults.
+
+Scripting and automation are the backbone of system administration.
+
+The boot process (BIOS → Bootloader → Kernel → Init → Userspace) is a magical dance that's amazing once you understand it.
+
+🎯 Future Improvements
+Add a Genesis Package Manager (GPM): A lightweight custom package manager.
+
+Improve hardware detection (especially for WiFi and GPU drivers).
+
+Build a GenesisOS Installer for easy installation to disk.
+
+Create pre-built ISOs for easier distribution.
+
+🔗 Try GenesisOS
+If you're curious to see a lightweight operating system in action — or you want a solid base for your next OS project — check out GenesisOS!
+👉 GitHub Repo - BytePin/GenesisOS
+
+Feel free to fork it, customize it, break it, fix it — that's what it's there for!
+
+Conclusion
+GenesisOS was more than just a technical project for me — it was a personal exploration into how operating systems really work.
+Every bug, crash, or missing driver taught me something that no textbook or tutorial could. It gave me a much deeper appreciation for the complexity and beauty of the systems we often take for granted.
+
+Building an OS, even a minimal one, changes how you view technology forever — and I highly recommend the experience to anyone passionate about computer science!
+
