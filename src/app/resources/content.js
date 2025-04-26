@@ -88,7 +88,7 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "MIT",
+        company: "MIT: Massachusetts Institute of Technology",
         timeframe: "2025 - Present",
         role: "Research Intern",
         achievements: [
@@ -99,6 +99,31 @@ const about = {
           <>
             Spearheaded the integration of AI tools into container workflows, enabling engineers to
             iterate 50% faster.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Fiverr",
+        timeframe: "2021 - Present",
+        role: "Freelancer",
+        achievements: [
+          <>
+            Provided UI/UX designing services through the Fiverr platform, after that further progressed to app development and web development.
+          </>,
+          <>
+            Tested multiple app through client's inputs and some personal additions.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Amazon Mechanical Turk",
+        timeframe: "2021 - Present",
+        role: "Worker Account",
+        achievements: [
+          <>
+            Tested multiple people's app/services through Turk's Platform and added useful points to let the author improve.
           </>,
         ],
         images: [],
@@ -126,7 +151,7 @@ const about = {
         achievements: [
           <>
             Fixed FluentUI design system that unified the brand across multiple platforms, improving
-            design consistency by 40%. Also fixed the Kernel Issue on AMD CPUs.
+            design consistency by 29%. Also fixed the Kernel Issue on AMD CPUs on 24H1.
           </>,
         ],
         images: [],
