@@ -43,7 +43,6 @@ const social = [
   },
   {
     name: "Instagram",
-    icon: "instagram",
     link: "https://instagram.com/mrhyperion",
   },
 ];
