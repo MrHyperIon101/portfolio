@@ -57,7 +57,7 @@ const HoloFx: React.FC<HoloFxProps> = ({ children, light, burn, texture, ...rest
 
   const burnDefaults = {
     opacity: 30,
-    filter: "brightness(0.1) contrast(1.5) hue-rotate(20deg)",
+    filter: "brightness(0.1) contrast(1.5) hue-rotate(40deg)",
     blending: "color-dodge" as CSSProperties["mixBlendMode"],
     mask: getMaskStyle(burn?.mask),
     ...burn,
@@ -118,7 +118,7 @@ const HoloFx: React.FC<HoloFxProps> = ({ children, light, burn, texture, ...rest
           filter: burnDefaults.filter,
           mixBlendMode: burnDefaults.blending,
           maskImage: burnDefaults.mask as string,
-          backgroundImage: "linear-gradient(#101020, #000000)"
+          backgroundImage: "linear-gradient(#1f0000, #000000)"
         }}
       >
         {children}
