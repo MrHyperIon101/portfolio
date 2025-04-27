@@ -37,7 +37,7 @@ const formatMask = (maskPosition: string = "100 200"): string => {
   const [x, y] = maskPosition.split(" ");
   const formattedX = `${x}%`;
   const formattedY = `${y ? y : x}%`;
-  return `radial-gradient(ellipse ${formattedX} ${formattedY} at var(--gradient-pos-x, 50%) var(--gradient-pos-y, 50%), black 50%, transparent 100%)`;
+  return `radial-gradient(ellipse ${formattedX} ${formattedY} at var(--gradient-pos-x, 50%) var(--gradient-pos-y, 50%), #101020 50%, transparent 100%)`;
 };
 
 const getMaskStyle = (mask?: MaskOptions): string => {
@@ -50,14 +50,14 @@ const HoloFx: React.FC<HoloFxProps> = ({ children, light, burn, texture, ...rest
 
   const lightDefaults = {
     opacity: 30,
-    blending: "color-dodge" as CSSProperties["mixBlendMode"],
+    blending: "screen" as CSSProperties["mixBlendMode"],
     mask: getMaskStyle(light?.mask),
     ...light,
   };
 
   const burnDefaults = {
     opacity: 30,
-    filter: "brightness(0.2) contrast(2)",
+    filter: "brightness(0.1) contrast(1.5) hue-rotate(20deg)",
     blending: "color-dodge" as CSSProperties["mixBlendMode"],
     mask: getMaskStyle(burn?.mask),
     ...burn,
@@ -65,7 +65,7 @@ const HoloFx: React.FC<HoloFxProps> = ({ children, light, burn, texture, ...rest
 
   const textureDefaults = {
     opacity: 10,
-    blending: "color-dodge" as CSSProperties["mixBlendMode"],
+    blending: "screen" as CSSProperties["mixBlendMode"],
     image:
       "repeating-linear-gradient(-45deg, var(--static-white) 0, var(--static-white) 1px, transparent 3px, transparent 2px)",
     mask: getMaskStyle(texture?.mask),
@@ -110,7 +110,7 @@ const HoloFx: React.FC<HoloFxProps> = ({ children, light, burn, texture, ...rest
       <Flex
         hide="m"
         position="absolute"
-        fill
+        fill        
         pointerEvents="none"
         className={classNames(styles.overlay, styles.burn)}
         style={{
@@ -118,6 +118,7 @@ const HoloFx: React.FC<HoloFxProps> = ({ children, light, burn, texture, ...rest
           filter: burnDefaults.filter,
           mixBlendMode: burnDefaults.blending,
           maskImage: burnDefaults.mask as string,
+          backgroundImage: "linear-gradient(#101020, #000000)"
         }}
       >
         {children}
@@ -125,12 +126,13 @@ const HoloFx: React.FC<HoloFxProps> = ({ children, light, burn, texture, ...rest
       <Flex
         hide="m"
         position="absolute"
-        fill
+        fill        
         pointerEvents="none"
         className={classNames(styles.overlay, styles.light)}
         style={{
           ["--light-opacity" as any]: lightDefaults.opacity + "%",
           filter: lightDefaults.filter,
+          backgroundImage: "linear-gradient(#101020, #000000)",
           mixBlendMode: lightDefaults.blending,
           maskImage: lightDefaults.mask as string,
         }}
