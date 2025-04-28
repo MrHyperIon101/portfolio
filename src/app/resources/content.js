@@ -145,6 +145,22 @@ const about = {
         images: [],
       },
       {
+        company: "Microsoft Design",
+        timeframe: "2024 - Present",
+        role: "Lead Designer",
+        achievements: [
+          <>
+            Worked on designing the FluentUI V2 that unified the brand across multiple platforms, improving
+            design consistency by 40%.
+          </>,
+          <>
+            Led a cross-functional design team to launch a new product line, contributing to a 10.5% increase
+            in overall company revenue.
+          </>,
+        ],
+        images: [],
+      },
+      {
         company: "Microsoft Community Board Insider",
         timeframe: "2023 - Present",
         role: "Lead Tester",
@@ -163,15 +179,15 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "Sikkim Manipal University",
+        name: "Sikkim Manipal University (Sikkim Manipal Institute Of Technology)",
         description: <>Studying Computer Science engineering with major specialization on Data Analytics And Science.</>,
       },
       {
-        name: "Kendriya Vidyalaya No 2 Kharagpur",
+        name: "Kendriya Vidyalaya Sangathan (KV No 2 Kharagpur)",
         description: <>Studied on CBSE's PCM Syllabus Structure specializing on Computer Science.</>,
       },
       {
-        name: "Google Developer Group Kolkata",
+        name: "Google Developer Groups (GDG Kolkata and GDG Siliguri)",
         description: <>Studied online marketing and personal branding. Also worked on Gemini Workshops.</>,
       },
     ],
