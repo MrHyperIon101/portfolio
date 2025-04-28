@@ -14,7 +14,7 @@ import { baseURL } from "@/app/resources";
 import TableOfContents from "@/components/about/TableOfContents";
 import styles from "@/components/about/about.module.scss";
 import { person, about, social } from "@/app/resources/content";
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 export async function generateMetadata() {
   const title = about.title;
   const description = about.description;
