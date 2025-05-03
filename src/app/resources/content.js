@@ -6,7 +6,7 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Full Stack Developer and Aspiring Data Scientist",
+  role: "Researcher, Full Stack Developer and Aspiring Data Scientist",
   avatar: "/images/avatar.jpeg",
   location: "Asia/Kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Hindi", "Bengali"], // optional: Leave the array empty if you don't want to display languages
@@ -48,10 +48,10 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Full-Stack Developer, Aspiring Data Scientist.</>,
+  headline: <>Researcher, Full-Stack Developer, Aspiring Data Scientist.</>,
   subline: (
     <>
-      I'm Souvik, a research intern at <InlineCode>MIT</InlineCode>, where I research on container based operating systems in quantum computing.
+      I'm Souvik, a research intern at <InlineCode>MIT</InlineCode>, where I research on I research on virtual machines and container based operating systems in quantum computing.
       <br /> My interests span across the tech spectrum — from building full-stack applications to exploring the capabilities of Large Language Models (LLMs), cloud computing, and intelligent systems.
     </>
   ),
@@ -99,6 +99,10 @@ const about = {
           <>
             Spearheaded the integration of AI tools into container workflows, enabling engineers to
             iterate 50% faster.
+          </>,
+          <>
+            Researched a new type of hardware rasterization technique with the integration of AI tools into container workflows, enabling engineers to
+            iterate 20% faster.
           </>,
         ],
         images: [],
@@ -150,12 +154,21 @@ const about = {
         role: "Lead Designer",
         achievements: [
           <>
-            Worked on designing the FluentUI V2 that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Worked on designing the FluentUI V2 that unified the brand across multiple platforms, improving design consistency by 40%.
           </>,
           <>
-            Led a cross-functional design team to launch a new product line, contributing to a 10.5% increase
-            in overall company revenue.
+            Led a cross-functional design team to launch a new product line, contributing to a 10.5% increase in overall company revenue.
+          </>
+        ],
+        images: [],
+      },
+      {
+        company: "Google Design",
+        timeframe: "2024 - Present",
+        role: "Junior Designer",
+        achievements: [
+          <>
+            Worked on improving Material Design that is being used in the AOSP Kernel across multiple platforms.
           </>,
         ],
         images: [],
@@ -169,6 +182,9 @@ const about = {
             Fixed FluentUI design system that unified the brand across multiple platforms, improving
             design consistency by 29%. Also fixed the Kernel Issue on AMD CPUs on 24H1.
           </>,
+          <>
+            Regularly monitors logs of Dev/Canary Branch of Windows Insider Platform and fixes bugs and improve the overall functioning of the platform.
+          </>,
         ],
         images: [],
       },
@@ -179,16 +195,20 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "Sikkim Manipal University (Sikkim Manipal Institute Of Technology)",
+        name: "Sikkim Manipal University (SMIT)",
         description: <>Studying Computer Science engineering with major specialization on Data Analytics And Science.</>,
       },
       {
-        name: "Kendriya Vidyalaya Sangathan (KV No 2 Kharagpur)",
+        name: "Kendriya Vidyalaya Sangathan",
         description: <>Studied on CBSE's PCM Syllabus Structure specializing on Computer Science.</>,
       },
       {
-        name: "Google Developer Groups (GDG Kolkata and GDG Siliguri)",
+        name: "Google Developer Group Kolkata",
         description: <>Studied online marketing and personal branding. Also worked on Gemini Workshops.</>,
+      },
+      {
+        name: "Google Developer Group Siliguri",
+        description: <>Studied Gemini APIs principles and working methods.</>,
       },
     ],
   },
